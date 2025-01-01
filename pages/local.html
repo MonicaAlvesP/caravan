@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Caravan - Local</title>
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div class="modal" id="modalLogin" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitulo">Entre na sua Conta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" required>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="lembrar">
+                <label class="form-check-label" for="lembrar">Lembrar-me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar na sua conta</button>
+            </form>
+            <div>
+              <span>Esqueceu sua senha? <a href="#" class="text-decoration-none">Clique aqui.</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fecha Modal -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 fixed-top box-shadow">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../img/caravan.svg" alt="logo icon caravan">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#" class="dropdown-item">California</a>
+              <a href="#" class="dropdown-item">Paris</a>
+              <a href="#" class="dropdown-item">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="planos.html" class="nav-link">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item ms-md-2">
+            <a href="inscricao.html" class="btn btn-outline-primary">Inscreva-se</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container my-5">
+      <div class="py-5 text-center">
+        <span class="h5 d-block">O MELHOR DESTINO DA SUA VIAGEM</span>
+        <h1 class="display-4 text-primary">Descubra Dublin</h1>
+      </div>
+    </section>
+
+    <div class="row m-2">
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="../img/local/foto-1.jpg" alt="Foto de Dublin 1">
+        <img class="img-fluid mb-4" src="../img/local/foto-2.jpg" alt="Foto de Dublin 2">
+        <img class="img-fluid mb-4" src="../img/local/foto-3.jpg" alt="Foto de Dublin 3">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="../img/local/foto-4.jpg" alt="Foto de Dublin 4">
+        <img class="img-fluid mb-4" src="../img/local/foto-5.jpg" alt="Foto de Dublin 5">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="../img/local/foto-6.jpg" alt="Foto de Dublin 6">
+        <img class="img-fluid mb-4" src="../img/local/foto-7.jpg" alt="Foto de Dublin 7">
+      </div>
+    </div>
+
+
+    <section class="container my-5">
+      <div class="py-5 text-center">
+        <span class="h5 d-block">Descubra o que acontece na cidade de Dublin</span>
+        <h3 class="display-5 text-primary">Próximos eventos</h3>
+      </div>
+
+      <table class="table table-hover table-responsive-md text-center">
+        <thead>
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Evento</th>
+            <th scope="col">Local</th>
+            <th>Ticket</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr scope="row">
+            <th>01/01</th>
+            <td>Concerto de Rock</td>
+            <td>Estádio de Dublin</td>
+            <td class="btn btn-outline-secondary btn-sm my-2">Comprar</td>
+          </tr>
+          <tr scope="row">
+            <th>15/01</th>
+            <td>Exposição de Arte</td>
+            <td>Museu de Dublin</td>
+            <td class="btn btn-outline-secondary btn-sm my-2">Comprar</td>
+          </tr>
+          <tr scope="row">
+            <th>25/01</th>
+            <td>Feira de Livros</td>
+            <td>Praça Central</td>
+            <td class="btn btn-outline-secondary btn-sm my-2">Comprar</td>
+          </tr>
+          <tr scope="row">
+            <th>10/02</th>
+            <td>Desfile de Moda</td>
+            <td>Centro de Convenções</td>
+            <td class="btn btn-outline-secondary btn-sm my-2">Comprar</td>
+          </tr>
+          <tr scope="row">
+            <th>20/02</th>
+            <td>Exposição de Carros Antigos</td>
+            <td>Estacionamento Central</td>
+            <td class="btn btn-outline-secondary btn-sm my-2">Comprar</td>
+          </tr>
+          <tr scope="row">
+            <th>05/03</th>
+            <td>Concerto de Jazz</td>
+            <td>Teatro de Dublin</td>
+            <td class="btn btn-outline-secondary btn-sm my-2">Comprar</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Páginas</h4>
+            <ul class="list-unstyled">
+              <li><a href="./pages/planos.html">Planos</a></li>
+              <li><a href="./pages/contato.html">Contato</a></li>
+              <li><a href="#">Inscreva-se</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Locais</h4>
+            <ul class="list-unstyled">
+              <li><a href="./california.html">California</a></li>
+              <li><a href="./paris.html">Paris</a></li>
+              <li><a href="./dublin.html">Dublin</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Dados para Contato</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>(11) 9999-9999</li>
+              <li>Rua das Pedras, 0</li>
+              <li>De Seg. á Qui. da 8h ás 16h</li>
+              <li>caravan@mail.com.br</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Redes Sociais</h4>
+            <ul class="list-unstyled d-flex justify-content-evenly">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-primary text-center p-2 text-white">
+      <p class="mb-0">&copy; 2021 Caravan. Todos os direitos reservados.</p>
+    </div>
+
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+
+</html>

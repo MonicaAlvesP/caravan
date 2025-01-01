@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Caravan</title>
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div class="modal" id="modalLogin" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitulo">Entre na sua Conta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" required>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="lembrar">
+                <label class="form-check-label" for="lembrar">Lembrar-me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar na sua conta</button>
+            </form>
+            <div>
+              <span>Esqueceu sua senha? <a href="#" class="text-decoration-none">Clique aqui.</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fecha Modal -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 fixed-top box-shadow">
+      <a href="index.html" class="navbar-brand">
+        <img src="./img/caravan.svg" alt="logo icon caravan">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Locais</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="./pages/local.html" class="dropdown-item">California</a>
+              <a href="./pages/local.html" class="dropdown-item">Paris</a>
+              <a href="./pages/local.html" class="dropdown-item">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/planos.html" class="nav-link">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item ms-md-2">
+            <a href="#" class="btn btn-outline-primary">Inscreva-se</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container-fluid">
+      <div class="row bg-dark text-white">
+        <div class="col-md-7 p-0">
+          <div id="carouselCity" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/california.jpg" class="d-block w-100" alt="California - EUA">
+                <span class="carousel-caption">California - EUA</span>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/dublin.jpg" class="d-block w-100" alt="Dublin - Irlanda">
+                <span class="carousel-caption">Dublin - Irlanda</span>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/paris.jpg" class="d-block w-100" alt="Paris - França">
+                <span class="carousel-caption">Paris - França</span>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCity" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCity" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-5 py-4 d-flex flex-column justify-content-center">
+          <h1 class="display-4">Realize a viagem dos seus sonhos</h1>
+          <p class="lead">Conheça os melhores lugares do mundo com a Caravan, mais de 5.000 excurssões concluídas.</p>
+          <form action="" class="mt-4">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="Digite seu e-mail"
+                aria-describedby="button-addon2">
+              <button class="btn btn-primary" type="button">Inscreva-se</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 mx-2 bg-light text-center">
+      <div class="container">
+        <div class="py-5">
+          <span class="h5 d-block">Viaje com conforto, segurança e estilo com a Caravan!</span>
+          <h2 class="display-4 text-primary">Aproveite as Vatagens</h2>
+        </div>
+
+        <section class="row mt-5 g-4">
+          <div class="col-xl-4 col-md-6">
+            <div class="d-flex justify-content-center icons">
+              <img src="./img/icones/passaporte.svg" alt="documentação em dia">
+            </div>
+            <h3>Documentos</h3>
+            <p>Documentos e passaportes em dia para sua viagem.</p>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="d-flex justify-content-center icons">
+              <img src="./img/icones/passagens.svg" alt="passagens aéreas">
+            </div>
+            <h3>Passagens</h3>
+            <p>Passagens aéreas de ida e volta para o destino escolhido.</p>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="d-flex justify-content-center icons">
+              <img src="./img/icones/translado.svg" alt="hospedagem">
+            </div>
+            <h3>Translado</h3>
+            <p>Translado do aeroporto para o hotel e vice-versa.</p>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="d-flex justify-content-center icons">
+              <img src="./img/icones/praias.svg" alt="hospedagem">
+            </div>
+            <h3>Praias</h3>
+            <p>Conheça as praias mais lindas do mundo.</p>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="d-flex justify-content-center icons">
+              <img src="./img/icones/bagagens.svg" alt="hospedagem">
+            </div>
+            <h3>Bagagens</h3>
+            <p>Bagagens despachadas e serviço de bordo.</p>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="d-flex justify-content-center icons">
+              <img src="./img/icones/turismo.svg" alt="hospedagem">
+            </div>
+            <h3>Turismo</h3>
+            <p>Conheça os pontos turísticos mais famosos.</p>
+          </div>
+
+          <div>
+            <a href="/pages/planos.html" class="btn btn-primary btn-lg">Comprar Plano</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="home-quote" class="p-md-5">
+      <blockquote class="blockquote text-center text-white p-md-5 p-3">
+        <p class="display-4">
+          <em> "Vento, ventania, me leve para qualquer lugar. Me leve para qualquer canto do mundo: Ásia, Europa,
+            América."
+          </em>
+        </p>
+        <footer class="blockquote-footer">Biquini Cavadão, Vento Ventania</footer>
+      </blockquote>
+    </section>
+
+    <section class="container my-5">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">Ainda possui dúvidas?</span>
+        <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+
+        <div class="accordion mt-5" id="accordionFAQ">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fa-solid fa-arrow-right p-1"></i>
+                Como faço para comprar um plano?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <p>Para comprar um plano, basta acessar a página de planos e escolher o plano que mais se encaixa com o
+                  seu perfil. Após escolher o plano, clique no botão "Comprar Plano" e siga as instruções.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fa-solid fa-arrow-right p-1"></i>
+                Como faço para cancelar um plano?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <p>Para cancelar um plano, basta acessar a página de planos e clicar no botão "Cancelar Plano". Após
+                  clicar no botão, siga as instruções para cancelar o plano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-arrow-right p-1"></i>
+                Como faço para entrar em contato?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <p>Para entrar em contato, basta acessar a página de contato e preencher o formulário de contato com
+                  seus dados e a sua mensagem. Após preencher o formulário, clique no botão "Enviar" para enviar a
+                  mensagem.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="fa-solid fa-arrow-right p-1"></i>
+                Como faço para me inscrever?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                <p>Para se inscrever, basta acessar a página de inscrição e preencher o formulário de inscrição com seus
+                  dados. Após preencher o formulário, clique no botão "Inscrever-se" para se inscrever.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <span class="h6 d-block">Fale conosco para tiramos suas dúvidas</span>
+        <a href="/pages/contato.html" class="btn btn-primary btn-lg">Entre em Contato</a>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Páginas</h4>
+            <ul class="list-unstyled">
+              <li><a href="./pages/planos.html">Planos</a></li>
+              <li><a href="./pages/contato.html">Contato</a></li>
+              <li><a href="#">Inscreva-se</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Locais</h4>
+            <ul class="list-unstyled">
+              <li><a href="./pages/local.html">California</a></li>
+              <li><a href="./pages/local.html">Paris</a></li>
+              <li><a href="./pages/local.html">Dublin</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Dados para Contato</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>(11) 9999-9999</li>
+              <li>Rua das Pedras, 0</li>
+              <li>De Seg. á Qui. da 8h ás 16h</li>
+              <li>caravan@mail.com.br</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Redes Sociais</h4>
+            <ul class="list-unstyled d-flex justify-content-evenly">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-primary text-center p-2 text-white">
+      <p class="mb-0">&copy; 2021 Caravan. Todos os direitos reservados.</p>
+    </div>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+
+</html>
