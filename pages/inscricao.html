@@ -83,110 +83,144 @@
       </div>
     </nav>
 
-    <section class="container my-5">
-      <div class="py-5 text-center">
-        <span class="h5 d-block">POSSUI ALGUMA DÚVIDA?</span>
+    <section class="container">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
         <h1 class="display-4 text-primary">Fale Conosco</h1>
       </div>
 
-      <div class="row">
-        <div class="col-lg mb-5">
-          <form class="p-4 bg-light rounded box-shadow">
-            <div class="form-group mb-3">
-              <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="nome">Nome</label>
-                  <input type="text" class="form-control" id="nome" name="nome" required placeholder="Nome Completo">
-                </div>
-                <div class="col-md-6">
-                  <label for="CPF">CPF</label>
-                  <input type="text" class="form-control" id="CPF" name="CPF" required placeholder="XXX.XXX.XXX-XX">
-                </div>
-              </div>
-            </div>
+      <form action="" class="col-lg-12">
+        <div class="form-row row">
+          <div class="form-group col-md-6">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" name="name" required placeholder="nome completo">
+          </div>
 
-            <div class="form-group mb-3">
-              <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
-                </div>
-                <div class="col-md-6">
-                  <label for="senha">Senha</label>
-                  <input type="password" class="form-control" id="senha" name="senha" required placeholder="Senha">
-                </div>
-              </div>
-            </div>
+          <div class="form-group col-md-6">
+            <label for="CPF">CPF</label>
+            <input type="text" class="form-control" id="CPF" name="CPF" required placeholder="000.000.000-00">
+          </div>
 
-            <div class="form-group mb-3">
-              <label for="endereco">Endereço</label>
-              <input type="text" class="form-control" id="endereco" name="endereco" required
-                placeholder="Nome da rua e bairro, número">
-            </div>
+          <div class="form-group col-md-6">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" required
+              placeholder="digite seu melhor email">
+          </div>
 
-            <div class="form-group mb-3">
-              <div class="row">
-                <div class="col-md-4 mb-3 mb-md-0">
-                  <label for="cidade">Cidade</label>
-                  <input type="text" class="form-control" id="cidade" name="cidade" required placeholder="Cidade">
-                </div>
-                <div class="col-md-1 mb-3">
-                  <label for="estado">Estado</label>
-                  <select name="estado" id="estado" class="form-control">
-                    <option value="SP">SP</option>
-                    <option value="RJ">RJ</option>
-                    <option value="MG">MG</option>
-                    <option value="PR">PR</option>
-                    <option value="SC">SC</option>
-                    <option value="RS">RS</option>
-                    <option value="ES">ES</option>
-                    <option value="BA">BA</option>
-                    <option value="PE">PE</option>
-                    <option value="CE">CE</option>
-                    <option value="RN">RN</option>
-                    <option value="PB">PB</option>
-                    <option value="SE">SE</option>
-                    <option value="AL">AL</option>
-                    <option value="PI">PI</option>
-                    <option value="MA">MA</option>
-                    <option value="PA">PA</option>
-                    <option value="AP">AP</option>
-                    <option value="TO">TO</option>
-                    <option value="RR">RR</option>
-                    <option value="AM">AM</option>
-                    <option value="AC">AC</option>
-                    <option value="RO">RO</option>
-                  </select>
-                </div>
-                <div class="col-md-4">
-                  <label for="cep">CEP</label>
-                  <input type="text" class="form-control" id="cep" name="cep" required placeholder="XXXXX-XXX">
-                </div>
-              </div>
-            </div>
+          <div class="form-group col-md-6">
+            <label for="password">Senha</label>
+            <input type="password" class="form-control" id="password" name="password" required
+              placeholder="digite sua senha">
+          </div>
+
+          <div class="form-group col-12">
+            <label for="address">Endereço</label>
+            <input type="text" class="form-control" id="address" name="address" required placeholder="rua, nº, bairro">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="city">Cidade</label>
+            <input type="text" class="form-control" id="city" name="city" required placeholder="cidade">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="state">Estado</label>
+            <select id="state" class="form-select" name="state" required>
+              <option value="SP">SP</option>
+              <option value="RJ">RJ</option>
+              <option value="MG">MG</option>
+              <option value="PR">PR</option>
+              <option value="SC">SC</option>
+              <option value="RS">RS</option>
+              <option value="ES">ES</option>
+              <option value="BA">BA</option>
+              <option value="PE">PE</option>
+              <option value="CE">CE</option>
+              <option value="RN">RN</option>
+              <option value="PB">PB</option>
+              <option value="SE">SE</option>
+              <option value="AL">AL</option>
+              <option value="PI">PI</option>
+              <option value="MA">MA</option>
+              <option value="PA">PA</option>
+              <option value="AP">AP</option>
+              <option value="TO">TO</option>
+              <option value="RR">RR</option>
+              <option value="AM">AM</option>
+              <option value="AC">AC</option>
+              <option value="RO">RO</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="zip">CEP</label>
+            <input type="text" class="form-control" id="zip" name="zip" required placeholder="00000-000">
+          </div>
+
         </div>
-        <button type="submit" class="btn btn-primary">Enviar Inscrição</button>
-        </form>
-      </div>
 
-      <div class="col-lg">
-        <h2 class="h6">NOSSO ENDEREÇO</h2>
-        <img class="img-fluid box-shadow rounded mb-4" src="../img/mapa.png" alt="Mapa com a localização da empresa">
-        <h2 class="h6">DADOS PARA CONTATO</h2>
-        <ul class="list-unstyled text-secondary">
-          <li>caravan@mail.com.br</li>
-          <li>(11) 9999-9999</li>
-          <li>Rua das Pedras, 0</li>
-          <li>De Seg. á Qui. da 8h ás 16h</li>
-        </ul>
+        <button type="submit" class="btn btn-primary my-2">Enviar Inscrição</button>
+      </form>
 
-        <h2 class="h6">Redes Sociais</h2>
-        <ul class="list-unstyled mt-3">
-          <li><a href="#"><i class="fab fa-facebook"> facebook</i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"> instagram</i></a></li>
-          <li><a href="#"><i class="fab fa-youtube"> youtube</i></a></li>
-        </ul>
-      </div>
+      <div class="bg-body-tertiary rounded box-shadow p-3 my-3 form-group">
+        <p class="h6 text-primary">FORMA DE PAGAMENTO</p>
+        <nav class="nav btn-group my-3" id="formaPagamento" role="tablist">
+          <button type="button" class="btn btn-secondary btn-sm active" id="btn-credito" data-bs-toggle="tab"
+            href="#nav-home" role="tab" aria-controls="nav-home">Cartão de Crédito</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-debito" data-bs-toggle="tab"
+            href="#nav-profile" role="tab" aria-controls="nav-profile">Cartão de Débito</button>
+        </nav>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel">
+            <form>
+              <div class="mb-3">
+                <label for="creditCardNumber" class="form-label">Número do Cartão</label>
+                <input type="text" class="form-control" id="creditCardNumber" placeholder="0000 0000 0000 0000"
+                  required>
+              </div>
+              <div class="mb-3">
+                <label for="creditCardName" class="form-label">Nome no Cartão</label>
+                <input type="text" class="form-control" id="creditCardName" placeholder="Nome Completo" required>
+              </div>
+              <div class="mb-3">
+                <label for="creditCardExpiry" class="form-label">Validade</label>
+                <input type="text" class="form-control" id="creditCardExpiry" placeholder="MM/AA" required>
+              </div>
+              <div class="mb-3">
+                <label for="creditCardCVV" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="creditCardCVV" placeholder="123" required>
+              </div>
+              <button type="submit" class="btn btn-primary my=3">Pagar</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel">
+            <form>
+              <div class="mb-3">
+                <label for="debitCardNumber" class="form-label">Número do Cartão</label>
+                <input type="text" class="form-control" id="debitCardNumber" placeholder="0000 0000 0000 0000" required>
+              </div>
+              <div class="mb-3">
+                <label for="debitCardName" class="form-label">Nome no Cartão</label>
+                <input type="text" class="form-control" id="debitCardName" placeholder="Nome Completo" required>
+              </div>
+              <div class="mb-3">
+                <label for="debitCardExpiry" class="form-label">Validade</label>
+                <input type="text" class="form-control" id="debitCardExpiry" placeholder="MM/AA" required>
+              </div>
+              <div class="mb-3">
+                <label for="debitCardCVV" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="debitCardCVV" placeholder="123" required>
+              </div>
+              <button type="submit" class="btn btn-primary my-3">Pagar</button>
+            </form>
+          </div>
+          <div class="form-check my-3">
+            <input type="checkbox" class="form-check-input" id="acceptTerms" required>
+            <label class="form-check-label" for="acceptTerms">Concordo com os <span class="text-primary">termos e
+                condições</span>.</label>
+          </div>
+        </div>
       </div>
     </section>
 
