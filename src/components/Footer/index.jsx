@@ -1,57 +1,52 @@
-import PropTypes from 'prop-types';
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
-
-const FooterSection = ({ title, children }) => (
-  <div className="col-md-3 col-6">
-    <h4 className="h6">{title}</h4>
-    <ul className="list-unstyled">
-      {children}
-    </ul>
-  </div>
-);
-
-FooterSection.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
+import { Col, Container, Row } from "react-bootstrap"
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
 
 export const Footer = () => {
   return (
-    <>
-      <footer className="bg-dark text-white text-center p-3">
-        <div className="container">
-          <div className="row">
-            <FooterSection title="Páginas">
+    <footer className="bg-dark text-light">
+      <Container className="text-center p-5">
+        <Row>
+          <Col md={3} className="col-6">
+            <h6>Páginas</h6>
+            <ul className="list-unstyled">
               <li><a href="./pages/planos.html">Planos</a></li>
               <li><a href="./pages/contato.html">Contato</a></li>
               <li><a href="#">Inscreva-se</a></li>
-            </FooterSection>
+            </ul>
+          </Col>
 
-            <FooterSection title="Locais">
+          <Col md={3} className="col-6">
+            <h6>Locais</h6>
+            <ul className="list-unstyled">
               <li><a href="./pages/local.html">California</a></li>
               <li><a href="./pages/local.html">Paris</a></li>
               <li><a href="./pages/local.html">Dublin</a></li>
-            </FooterSection>
+            </ul>
+          </Col>
 
-            <FooterSection title="Dados para Contato">
-              <li className="text-secondary">(11) 9999-9999</li>
-              <li className="text-secondary">Rua das Pedras, 0</li>
-              <li className="text-secondary">De Seg. á Qui. da 8h ás 16h</li>
-              <li className="text-secondary">caravan@mail.com.br</li>
-            </FooterSection>
+          <Col md={3} className="col-6">
+            <h6>Dados para Contato</h6>
+            <ul className="list-unstyled text-secondary">
+              <li>(11) 9999-9999</li>
+              <li>Rua das Pedras, 0</li>
+              <li>De Seg. á Qui. da 8h ás 16h</li>
+              <li>caravan@mail.com.br</li>
+            </ul>
+          </Col>
 
-            <FooterSection title="Redes Sociais">
+          <Col md={3} className="col-6">
+            <h6>Redes Sociais</h6>
+            <ul className="list-unstyled d-flex justify-content-evenly">
               <li><a href="#"><FaFacebook /></a></li>
               <li><a href="#"><FaInstagram /></a></li>
               <li><a href="#"><FaYoutube /></a></li>
-            </FooterSection>
-          </div>
-        </div>
-
-      </footer>
-      <div className="bg-secondary text-white p-2 text-center">
-        <small>&copy; 2024 Caravan - Todos os direitos reservados a escola @Origamid.</small>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+      <div className="bg-primary text-light py-2 text-center">
+        <p>© 2024 Caravan - Todos os direitos reservados a @Origamid.</p>
       </div>
-    </>
-  );
-};
+    </footer>
+  )
+}
