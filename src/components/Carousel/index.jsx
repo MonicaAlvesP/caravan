@@ -14,20 +14,23 @@ export const CarouselCity = () => {
     <Container fluid>
       <Row className='bg-black text-white'>
         <div className="col-md-7 p-0">
-          <Carousel id="carouselCity">
-            <Carousel.Item>
+          <Carousel id="carouselCity"
+            fade={true}
+            
+          >
+            <Carousel.Item interval={3000}>
               <img src={California} className="d-block w-100" alt="California - EUA" />
               <Carousel.Caption>
                 <span>California - EUA</span>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={3000}>
               <img src={Dublin} className="d-block w-100" alt="Dublin - Irlanda" />
               <Carousel.Caption>
                 <span>Dublin - Irlanda</span>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={3000}>
               <img src={Paris} className="d-block w-100" alt="Paris - França" />
               <Carousel.Caption>
                 <span>Paris - França</span>
