@@ -1,0 +1,9 @@
+.homeQuote {
+  background-image: url('../../assets/img/bg-quote.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  & > footer {
+    color: #ff3;
+  }
+}

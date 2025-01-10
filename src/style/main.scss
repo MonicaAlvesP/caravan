@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  // background-color: rgb(214, 4, 4);
-}
-
 .box-shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
 }
