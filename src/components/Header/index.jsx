@@ -6,7 +6,7 @@ import { Inicio } from "@pages/Inicio";
 import { Local } from "@pages/Local";
 import { Planos } from "@pages/Planos";
 import { Contato } from "@pages/Contato";
-import { Inscricao } from "@pages/Inscricao";
+import { Inscricao } from "@pages/inscricao";
 
 export const Header = () => {
   return (
